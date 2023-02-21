@@ -67,7 +67,7 @@ const Page = (props) => {
  
   <script type="text/javascript">
     StoryblokRenderer.init({
-      accessToken: 'YOUR_TOKEN',
+      accessToken: 'cPrXvXqSgXVIVHU51jQrIQtt',
       customParent: 'https://storyblok.eu9.visual.force.com'
     });
  
