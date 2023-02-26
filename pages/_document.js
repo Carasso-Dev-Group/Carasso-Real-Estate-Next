@@ -38,7 +38,7 @@ class CustomDocument extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html:
-                '</noscript><!--This is the head section-->\n<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css" crossorigin="anonymous" referrerpolicy="no-referrer" />\n<style>\n.hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {\n    background-color: #fff !important;\n}\n.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{\nbackground-color: #fff;\n}\n</style><noscript>',
+                '</noscript><!--This is the head section-->\n<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css" crossorigin="anonymous" referrerpolicy="no-referrer" />\n<style>\n.hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {\n    background-color: #fff !important;\n}\n.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{\nbackground-color: #fff;\n}\n</style>\n<script src="//app.storyblok.com/f/storyblok-v2-latest.js" type="text/javascript">\n</script>\n<noscript>',
             }}
           ></noscript>
         </Head>
@@ -48,7 +48,7 @@ class CustomDocument extends Document {
           <div
             dangerouslySetInnerHTML={{
               __html:
-                "<!-- Your body code here -->\n<!-- <script type=\"text/javascript\"> ... </script> --> \n    <script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>",
+                "<!-- Your body code here -->\n<!-- <script type=\"text/javascript\"> ... </script> --> \n    <script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>\n    <script>\n        const { StoryblokBridge, location } = window\nconst storyblokInstance = new StoryblokBridge()\n \nstoryblokInstance.on(['published', 'change'], () => {\n    // reload page if save or publish is clicked\n    location.reload(true)\n})\n</script>",
             }}
           ></div>
         </body>
