@@ -10,7 +10,7 @@ const Navbar = (props) => {
       <div className="navbar-navbar">
         <header data-thq="thq-navbar" className="navbar-navbar-interactive">
           <div className="navbar-branding">
-            <Link href="/tail1">
+            <Link href="/">
               <a className="navbar-link">
                 <img
                   alt={props.Logo_alt}
