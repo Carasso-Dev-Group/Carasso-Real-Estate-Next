@@ -18,7 +18,9 @@ const Tail1 = (props) => {
           />
         </Head>
         <div className="tail1-inner-content">
-          <GetStarted></GetStarted>
+          <div className="tail1-container1">
+            <GetStarted rootClassName="get-started-root-class-name"></GetStarted>
+          </div>
         </div>
       </div>
       <style jsx>
@@ -36,6 +38,15 @@ const Tail1 = (props) => {
             width: 100%;
             height: auto;
             display: flex;
+          }
+          .tail1-container1 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding-top: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-twounits);
+            justify-content: center;
           }
           @media (max-width: 767px) {
             .tail1-inner-content {

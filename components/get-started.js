@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const GetStarted = (props) => {
   return (
     <>
-      <div className="get-started-main">
+      <div className={`get-started-main ${props.rootClassName} `}>
         <div className="get-started-colmun-1">
           <div className="get-started-div">
             <div className="get-started-border">
@@ -52,6 +52,7 @@ const GetStarted = (props) => {
             display: flex;
             position: relative;
             align-items: center;
+            border-radius: 20px;
           }
           .get-started-colmun-1 {
             flex: 0 0 auto;
@@ -158,14 +159,27 @@ const GetStarted = (props) => {
             width: 50%;
             height: auto;
             display: flex;
+            border-radius: var(--dl-radius-radius-round);
             flex-direction: column;
+            border-top-left-radius: 0;
+            border-top-right-radius: var(--dl-radius-radius-round);
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: var(--dl-radius-radius-round);
           }
           .get-started-image-banner {
             width: 100%;
             display: block;
             clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
             object-fit: cover;
+            border-radius: var(--dl-radius-radius-round);
             -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+            border-top-left-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 10px;
+          }
+          .get-started-root-class-name {
+            max-width: var(--dl-size-size-maxwidth);
           }
           @media (max-width: 1600px) {
             .get-started-title {
@@ -272,6 +286,7 @@ GetStarted.defaultProps = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales mollis nunc, nec interdum odio rutrum non.',
   button: 'Get Started',
   button1: 'Learn More',
+  rootClassName: '',
 }
 
 GetStarted.propTypes = {
@@ -284,6 +299,7 @@ GetStarted.propTypes = {
   Content_Text: PropTypes.string,
   button: PropTypes.string,
   button1: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default GetStarted
