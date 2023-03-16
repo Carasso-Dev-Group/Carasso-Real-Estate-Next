@@ -87,13 +87,14 @@ const GetStarted = (props) => {
           }
           .get-started-top-text {
             color: var(--dl-color-gray-500);
+            font-size: 0.9rem;
             padding-top: var(--dl-space-space-halfunit);
             padding-left: var(--dl-space-space-oneandhalfunits);
           }
           .get-started-top-link {
             color: rgb(84, 73, 225);
             height: auto;
-            font-size: 26px;
+            font-size: 0.9rem;
             font-style: normal;
             font-weight: 700;
             padding-top: var(--dl-space-space-halfunit);
@@ -119,7 +120,7 @@ const GetStarted = (props) => {
             flex-direction: column;
           }
           .get-started-content-text {
-            font-size: 36px;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 300;
             margin-bottom: var(--dl-space-space-twounits);
@@ -135,7 +136,7 @@ const GetStarted = (props) => {
           }
           .get-started-button {
             color: var(--dl-color-gray-white);
-            font-size: 30px;
+            font-size: 1.5rem;
             padding-top: var(--dl-space-space-oneandhalfunits);
             margin-right: var(--dl-space-space-oneandhalfunits);
             padding-left: var(--dl-space-space-twounits);
@@ -146,7 +147,7 @@ const GetStarted = (props) => {
           }
           .get-started-button1 {
             color: var(--dl-color-gray-black);
-            font-size: 30px;
+            font-size: 1.5rem;
             padding-top: var(--dl-space-space-oneandhalfunits);
             padding-left: var(--dl-space-space-twounits);
             border-radius: var(--dl-radius-radius-radius8);
@@ -181,6 +182,7 @@ const GetStarted = (props) => {
           .get-started-root-class-name {
             max-width: var(--dl-size-size-maxwidth);
           }
+
           @media (max-width: 1600px) {
             .get-started-title {
               font-size: 3.4rem;
