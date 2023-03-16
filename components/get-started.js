@@ -86,8 +86,8 @@ const GetStarted = (props) => {
           }
           .get-started-top-text {
             color: var(--dl-color-gray-500);
-            padding-top: var(--dl-space-space-unit);
-            padding-left: var(--dl-space-space-unit);
+            padding-top: var(--dl-space-space-halfunit);
+            padding-left: var(--dl-space-space-oneandhalfunits);
           }
           .get-started-top-link {
             color: rgb(84, 73, 225);
@@ -95,15 +95,15 @@ const GetStarted = (props) => {
             font-size: 26px;
             font-style: normal;
             font-weight: 700;
-            padding-top: var(--dl-space-space-unit);
+            padding-top: var(--dl-space-space-halfunit);
             padding-left: 0px;
-            padding-right: var(--dl-space-space-unit);
-            padding-bottom: var(--dl-space-space-unit);
+            padding-right: var(--dl-space-space-oneandhalfunits);
+            padding-bottom: var(--dl-space-space-halfunit);
           }
           .get-started-title {
             font-size: 4rem;
             margin-top: var(--dl-space-space-twounits);
-            font-family: Noto Sans;
+            font-family: Exo 2;
             font-weight: 700;
             margin-bottom: var(--dl-space-space-twounits);
             text-transform: none;
@@ -119,6 +119,8 @@ const GetStarted = (props) => {
           }
           .get-started-content-text {
             font-size: 36px;
+            font-style: normal;
+            font-weight: 300;
             margin-bottom: var(--dl-space-space-twounits);
           }
           .get-started-buttons {
