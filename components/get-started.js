@@ -104,8 +104,8 @@ const GetStarted = (props) => {
           .get-started-title {
             font-size: 4rem;
             margin-top: var(--dl-space-space-twounits);
-            font-family: Exo 2;
             font-weight: 700;
+            line-height: 1;
             margin-bottom: var(--dl-space-space-twounits);
             text-transform: none;
             text-decoration: none;
