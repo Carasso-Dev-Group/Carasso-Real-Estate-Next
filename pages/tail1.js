@@ -16,42 +16,44 @@ const Tail1 = (props) => {
           />
         </Head>
         <div className="tail1-inner-content">
-          <div className="tail1-colmun-1">
-            <div className="tail1-div">
-              <div className="tail1-border">
-                <span className="tail1-text">
-                  This is a top text with link above the title link. 
+          <div className="tail1-main">
+            <div className="tail1-colmun-1">
+              <div className="tail1-div">
+                <div className="tail1-border">
+                  <span className="tail1-top-text">
+                    This is a top text with link above the title link. 
+                  </span>
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="tail1-top-link"
+                  >
+                    Read More 
+                  </a>
+                </div>
+                <span className="tail1-title">
+                  Data to enrich your online business
                 </span>
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="tail1-link"
-                >
-                  Read More 
-                </a>
-              </div>
-              <span className="tail1-title">
-                Data to enrich your online business
-              </span>
-              <div className="tail1-content">
-                <span className="tail1-text1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                  sodales mollis nunc, nec interdum odio rutrum non.
-                </span>
-              </div>
-              <div className="tail1-buttons">
-                <button className="tail1-button button">Get Started</button>
-                <button className="tail1-button1 button">Learn More</button>
+                <div className="tail1-content">
+                  <span className="tail1-content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi sodales mollis nunc, nec interdum odio rutrum non.
+                  </span>
+                </div>
+                <div className="tail1-buttons">
+                  <button className="tail1-button button">Get Started</button>
+                  <button className="tail1-button1 button">Learn More</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="tail1-colmun-2">
-            <img
-              src="https://images.unsplash.com/photo-1528469138590-fa12d3193392?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDQ0fHxidWlsZGluZ3xlbnwwfHx8fDE2Nzg5NjYwMDU&amp;ixlib=rb-4.0.3&amp;w=1500"
-              alt="image"
-              className="tail1-image"
-            />
+            <div className="tail1-colmun-2">
+              <img
+                src="https://images.unsplash.com/photo-1528469138590-fa12d3193392?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDQ0fHxidWlsZGluZ3xlbnwwfHx8fDE2Nzg5NjYwMDU&amp;ixlib=rb-4.0.3&amp;w=1500"
+                alt="image"
+                className="tail1-image-banner"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -66,6 +68,12 @@ const Tail1 = (props) => {
             flex-direction: column;
           }
           .tail1-inner-content {
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            display: flex;
+          }
+          .tail1-main {
             flex: 0 0 auto;
             width: 100%;
             height: auto;
@@ -103,12 +111,12 @@ const Tail1 = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .tail1-text {
+          .tail1-top-text {
             color: var(--dl-color-gray-500);
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-unit);
           }
-          .tail1-link {
+          .tail1-top-link {
             color: rgb(84, 73, 225);
             height: auto;
             font-size: 26px;
@@ -136,7 +144,7 @@ const Tail1 = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .tail1-text1 {
+          .tail1-content-text {
             font-size: 36px;
             margin-bottom: var(--dl-space-space-twounits);
           }
@@ -177,7 +185,7 @@ const Tail1 = (props) => {
             display: flex;
             flex-direction: column;
           }
-          .tail1-image {
+          .tail1-image-banner {
             width: 100%;
             display: block;
             clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -188,7 +196,7 @@ const Tail1 = (props) => {
             .tail1-title {
               font-size: 3.4rem;
             }
-            .tail1-text1 {
+            .tail1-content-text {
               font-size: 32px;
             }
             .tail1-button {
@@ -207,16 +215,16 @@ const Tail1 = (props) => {
             }
           }
           @media (max-width: 1200px) {
-            .tail1-text {
+            .tail1-top-text {
               font-size: 18px;
             }
-            .tail1-link {
+            .tail1-top-link {
               font-size: 18px;
             }
             .tail1-title {
               font-size: 2.5rem;
             }
-            .tail1-text1 {
+            .tail1-content-text {
               font-size: 30px;
             }
             .tail1-button {
@@ -231,10 +239,10 @@ const Tail1 = (props) => {
             }
           }
           @media (max-width: 991px) {
-            .tail1-text {
+            .tail1-top-text {
               font-size: 16px;
             }
-            .tail1-link {
+            .tail1-top-link {
               font-size: 16px;
             }
             .tail1-title {
@@ -244,7 +252,7 @@ const Tail1 = (props) => {
               text-transform: none;
               text-decoration: none;
             }
-            .tail1-text1 {
+            .tail1-content-text {
               font-size: 24px;
             }
             .tail1-button {
