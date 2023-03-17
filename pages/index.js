@@ -20,10 +20,10 @@ const Tail1 = (props) => {
         <div className="tail1-inner-content">
           <div className="tail1-container1">
             <GetStarted
-              rootClassName="get-started-root-class-name"
               link_button="/page"
               link_button1="/page"
               link_Top_Link="/page"
+              rootClassName="get-started-root-class-name"
             ></GetStarted>
           </div>
         </div>

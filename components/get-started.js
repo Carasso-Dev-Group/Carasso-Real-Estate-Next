@@ -10,12 +10,7 @@ const GetStarted = (props) => {
           <div className="get-started-div">
             <div className="get-started-border">
               <span className="get-started-top-text">{props.Top_Text}</span>
-              <a
-                href={props.link_Top_Link}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="get-started-top-link"
-              >
+              <a href={props.link_Top_Link} className="get-started-top-link">
                 {props.Top_Link}
               </a>
             </div>
@@ -26,20 +21,10 @@ const GetStarted = (props) => {
               </span>
             </div>
             <div className="get-started-buttons">
-              <a
-                href={props.link_button1}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="get-started-link button"
-              >
+              <a href={props.link_button1} className="get-started-link button">
                 {props.button}
               </a>
-              <a
-                href={props.link_button}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="get-started-link1 button"
-              >
+              <a href={props.link_button} className="get-started-link1 button">
                 {props.button1}
               </a>
             </div>
@@ -47,8 +32,8 @@ const GetStarted = (props) => {
         </div>
         <div className="get-started-colmun-2">
           <img
-            src={props.Image_Banner_src}
             alt={props.Image_Banner_alt}
+            src={props.Image_Banner_src}
             className="get-started-image-banner"
           />
         </div>
@@ -289,35 +274,35 @@ const GetStarted = (props) => {
 }
 
 GetStarted.defaultProps = {
-  Image_Banner_src:
-    'https://images.unsplash.com/photo-1528469138590-fa12d3193392?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDQ0fHxidWlsZGluZ3xlbnwwfHx8fDE2Nzg5NjYwMDU&ixlib=rb-4.0.3&w=1500',
-  Image_Banner_alt: 'image',
-  Title: 'Data to enrich your online business',
-  Top_Text: 'This is a top text with link above the  title link. ',
-  Top_Link: 'Read More ',
-  link_Top_Link: 'https://example.com',
+  link_button1: '',
   Content_Text:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales mollis nunc, nec interdum odio rutrum non.',
+  Top_Text: 'This is a top text with link above the  title link. ',
+  Top_Link: 'Read More ',
+  Image_Banner_src:
+    'https://images.unsplash.com/photo-1528469138590-fa12d3193392?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDQ0fHxidWlsZGluZ3xlbnwwfHx8fDE2Nzg5NjYwMDU&ixlib=rb-4.0.3&w=1500',
+  link_Top_Link: 'https://example.com',
   button: 'Get Started',
-  button1: 'Learn More',
+  Title: 'Data to enrich your online business',
   rootClassName: '',
+  Image_Banner_alt: 'image',
+  button1: 'Learn More',
   link_button: '',
-  link_button1: '',
 }
 
 GetStarted.propTypes = {
-  Image_Banner_src: PropTypes.string,
-  Image_Banner_alt: PropTypes.string,
-  Title: PropTypes.string,
+  link_button1: PropTypes.string,
+  Content_Text: PropTypes.string,
   Top_Text: PropTypes.string,
   Top_Link: PropTypes.string,
+  Image_Banner_src: PropTypes.string,
   link_Top_Link: PropTypes.string,
-  Content_Text: PropTypes.string,
   button: PropTypes.string,
-  button1: PropTypes.string,
+  Title: PropTypes.string,
   rootClassName: PropTypes.string,
+  Image_Banner_alt: PropTypes.string,
+  button1: PropTypes.string,
   link_button: PropTypes.string,
-  link_button1: PropTypes.string,
 }
 
 export default GetStarted

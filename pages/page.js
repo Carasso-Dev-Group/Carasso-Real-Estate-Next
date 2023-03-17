@@ -19,10 +19,10 @@ const Page = (props) => {
         </Head>
         <div className="page-main">
           <GetStarted
-            rootClassName="get-started-root-class-name2"
             link_button="/"
             link_button1="/"
             link_Top_Link="/"
+            rootClassName="get-started-root-class-name2"
           ></GetStarted>
         </div>
       </div>
