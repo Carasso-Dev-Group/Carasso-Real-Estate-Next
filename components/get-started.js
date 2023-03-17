@@ -26,12 +26,22 @@ const GetStarted = (props) => {
               </span>
             </div>
             <div className="get-started-buttons">
-              <button className="get-started-button button">
+              <a
+                href={props.link_button1}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="get-started-link button"
+              >
                 {props.button}
-              </button>
-              <button className="get-started-button1 button">
+              </a>
+              <a
+                href={props.link_button}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="get-started-link1 button"
+              >
                 {props.button1}
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -134,7 +144,7 @@ const GetStarted = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .get-started-button {
+          .get-started-link {
             color: var(--dl-color-gray-white);
             font-size: 1.5rem;
             padding-top: var(--dl-space-space-oneandhalfunits);
@@ -143,9 +153,10 @@ const GetStarted = (props) => {
             border-radius: var(--dl-radius-radius-radius8);
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-oneandhalfunits);
+            text-decoration: none;
             background-color: rgb(84, 73, 225);
           }
-          .get-started-button1 {
+          .get-started-link1 {
             color: var(--dl-color-gray-black);
             font-size: 1.5rem;
             padding-top: var(--dl-space-space-oneandhalfunits);
@@ -153,6 +164,7 @@ const GetStarted = (props) => {
             border-radius: var(--dl-radius-radius-radius8);
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-oneandhalfunits);
+            text-decoration: none;
             background-color: var(--dl-color-gray-white);
           }
           .get-started-colmun-2 {
@@ -190,14 +202,14 @@ const GetStarted = (props) => {
             .get-started-content-text {
               font-size: 32px;
             }
-            .get-started-button {
+            .get-started-link {
               font-size: 28px;
               padding-top: var(--dl-space-space-oneandhalfunits);
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
               padding-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .get-started-button1 {
+            .get-started-link1 {
               font-size: 28px;
               padding-top: var(--dl-space-space-oneandhalfunits);
               padding-left: var(--dl-space-space-twounits);
@@ -218,13 +230,13 @@ const GetStarted = (props) => {
             .get-started-content-text {
               font-size: 30px;
             }
-            .get-started-button {
+            .get-started-link {
               padding-top: var(--dl-space-space-oneandhalfunits);
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
               padding-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .get-started-button1 {
+            .get-started-link1 {
               padding-top: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-oneandhalfunits);
             }
@@ -246,10 +258,10 @@ const GetStarted = (props) => {
             .get-started-content-text {
               font-size: 24px;
             }
-            .get-started-button {
+            .get-started-link {
               font-size: 25px;
             }
-            .get-started-button1 {
+            .get-started-link1 {
               font-size: 25px;
             }
           }
@@ -289,6 +301,8 @@ GetStarted.defaultProps = {
   button: 'Get Started',
   button1: 'Learn More',
   rootClassName: '',
+  link_button: '',
+  link_button1: '',
 }
 
 GetStarted.propTypes = {
@@ -302,6 +316,8 @@ GetStarted.propTypes = {
   button: PropTypes.string,
   button1: PropTypes.string,
   rootClassName: PropTypes.string,
+  link_button: PropTypes.string,
+  link_button1: PropTypes.string,
 }
 
 export default GetStarted

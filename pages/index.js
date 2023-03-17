@@ -19,7 +19,12 @@ const Tail1 = (props) => {
         </Head>
         <div className="tail1-inner-content">
           <div className="tail1-container1">
-            <GetStarted rootClassName="get-started-root-class-name"></GetStarted>
+            <GetStarted
+              rootClassName="get-started-root-class-name"
+              link_button="/page"
+              link_button1="/page"
+              link_Top_Link="/page"
+            ></GetStarted>
           </div>
         </div>
       </div>

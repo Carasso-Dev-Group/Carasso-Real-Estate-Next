@@ -18,12 +18,12 @@ const Page = (props) => {
           />
         </Head>
         <div className="page-main">
-          <div className="page-container1">
-            <GetStarted rootClassName="get-started-root-class-name1"></GetStarted>
-          </div>
-          <div className="page-container2"></div>
-          <div className="page-container3"></div>
-          <div className="page-container4"></div>
+          <GetStarted
+            rootClassName="get-started-root-class-name2"
+            link_button="/"
+            link_button1="/"
+            link_Top_Link="/"
+          ></GetStarted>
         </div>
       </div>
       <style jsx>
@@ -39,44 +39,9 @@ const Page = (props) => {
           .page-main {
             flex: 0 0 auto;
             width: 100%;
-            display: flex;
-            align-items: flex-start;
-          }
-          .page-container1 {
-            flex: 0 0 auto;
-            width: 25%;
             height: auto;
             display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .page-container2 {
-            flex: 0 0 auto;
-            width: 25%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 100px;
-            display: flex;
             align-items: flex-start;
-            flex-direction: column;
-          }
-          .page-container3 {
-            flex: 0 0 auto;
-            width: 25%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 100px;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .page-container4 {
-            flex: 0 0 auto;
-            width: 25%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 100px;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
           }
           @media (max-width: 479px) {
             .page-main {
