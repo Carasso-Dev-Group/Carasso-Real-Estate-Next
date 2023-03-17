@@ -261,6 +261,11 @@ const GetStarted = (props) => {
             .get-started-colmun-2 {
               width: 100%;
             }
+            .get-started-image-banner {
+              height: 300px;
+              clip-path: none;
+              -webkit-clip-path: none;
+            }
           }
           @media (max-width: 479px) {
             .get-started-colmun-1 {
