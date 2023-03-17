@@ -251,6 +251,9 @@ const GetStarted = (props) => {
             }
           }
           @media (max-width: 767px) {
+            .get-started-main {
+              flex-direction: column;
+            }
             .get-started-colmun-1 {
               width: 100%;
               margin-top: var(--dl-space-space-oneandhalfunits);
@@ -263,8 +266,22 @@ const GetStarted = (props) => {
             .get-started-colmun-1 {
               margin-top: var(--dl-space-space-oneandhalfunits);
             }
+            .get-started-top-text {
+              font-size: 14px;
+            }
             .get-started-title {
               width: auto;
+            }
+            .get-started-content-text {
+              font-size: 22px;
+            }
+            .get-started-link {
+              padding-top: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-unit);
+            }
+            .get-started-link1 {
+              padding-top: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-unit);
             }
           }
         `}
