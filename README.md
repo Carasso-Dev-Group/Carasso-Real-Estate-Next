@@ -1,3 +1,3 @@
 # Carasso-Real-Estate-Next
 
-![Vercel](https://carasso-real-estate-next.vercel.app/)/?app={carasso-real-estate-next})
+![Vercel](https://vercelbadge.vercel.app/api/[carasso-dev]/[carasso-real-estate-next])
